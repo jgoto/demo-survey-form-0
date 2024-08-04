@@ -1,0 +1,52 @@
+body{
+  background-color: #ededed;
+  font-family: sans-serif;
+}
+
+h1, p{
+  color: #343434;
+  text-align: center;
+}
+
+p{
+  font-size: 1.2em;
+}
+
+form{
+  margin: 0 auto;
+  width: 80%;
+  min-width: 300px;
+  max-width: 500px;
+  font-size: 1.2em;
+}
+
+fieldset{
+  margin: 0 0;
+  border: none;
+}
+
+label{
+  display: block;
+  width: 75%;
+  margin: 8px 0;
+}
+
+input{
+  background-color: #aaaaaa;
+  border-color: #aaaaaa;
+  font-size: 1.2em;
+  margin: 0 0;
+  width: 50%;
+  vertical-align: middle;
+}
+input[type="text"], input[type="email"],input[type="number"]{
+  width: 50%;
+  min-width: 200px;
+}
+
+textarea{  
+  background-color: #aaaaaa;
+}
+select{
+  font-size: 1em;
+}
