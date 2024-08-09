@@ -3,6 +3,35 @@ body{
   font-family: sans-serif;
 }
 
+#personalDetails, #surveyDetails{
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#personalDetails{
+  margin-bottom: 22px;
+}
+
+.personalDetail{
+  width: 80%;
+  flex-direction: row;
+  padding: 6px 12px;
+  gap: 8px;
+}
+
+.personalDetail label, input{
+  flex: 1;
+}
+
+.personalDetail label{
+  width: 200px;
+  padding: 6px;
+
+}
+
 h1, p{
   color: #343434;
   text-align: center;
@@ -20,28 +49,11 @@ form{
   font-size: 1.2em;
 }
 
-fieldset{
-  margin: 0 0;
-  border: none;
-}
-
-label{
-  display: block;
-  width: 75%;
-  margin: 8px 0;
-}
 
 input{
   background-color: #aaaaaa;
   border-color: #aaaaaa;
   font-size: 1.2em;
-  margin: 0 0;
-  width: 50%;
-  vertical-align: middle;
-}
-input[type="text"], input[type="email"],input[type="number"]{
-  width: 50%;
-  min-width: 200px;
 }
 
 textarea{  
