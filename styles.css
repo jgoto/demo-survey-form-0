@@ -8,7 +8,6 @@ body{
   gap: 8px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 #personalDetails{
@@ -24,12 +23,67 @@ body{
 
 .personalDetail label, input{
   flex: 1;
+  text-align: center;
 }
 
 .personalDetail label{
-  width: 200px;
+  width: 25%;
   padding: 6px;
 
+}
+
+#surveyDetails{
+  margin-bottom: 22px;
+}
+
+.personalDetail input{
+  width: 60%;
+}
+
+#contactPermission{
+  flex-direction: row;
+  align-items: center;
+}
+
+#contactPermission label{
+  width: 30%;
+}
+
+.fullWidth{
+  width: 100%;
+  padding: 6px auto;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#referralSource{
+  display: flex;
+  gap: 8px;
+}
+
+#otherRequirements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+#otherRequirements label{
+  display: block;
+  width: 100%;
+}
+
+#otherRequirements textarea{
+  width: 60%;
+  margin: 8px;
+}
+
+button[type="submit"]{
+  display: flex;
+  padding: 8px;
+  font-size: 1.5em;
+  margin: auto;
 }
 
 h1, p{
@@ -49,7 +103,6 @@ form{
   font-size: 1.2em;
 }
 
-
 input{
   background-color: #aaaaaa;
   border-color: #aaaaaa;
@@ -61,4 +114,8 @@ textarea{
 }
 select{
   font-size: 1em;
+}
+
+fieldset{
+  border: none;
 }

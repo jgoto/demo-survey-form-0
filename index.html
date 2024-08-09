@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1 id = "title">Learn About Our Programs</h1>
-    <p id = "description">Tell us about yourself and the program you are interested in</p>
+    <p class ="fullWidth" = "description">Tell us about yourself and the program you are interested in</p>
     <form id = "survey-form">
       <fieldset id = "personalDetails" >
         <div class="personalDetail">
@@ -19,7 +19,7 @@
         <div class="personalDetail">
           <label id = "number-label" for = "number">Age <input type = "number" id = "number" min = "49" max = "113" placeholder = "50" /></label>
         </div>
-        <label for = "dropdown">Which Program are you interested </label>
+        <label class="fullWidth" for = "dropdown">Which Program are you interested </label>
       <select id = "dropdown" >
         <option>Please Select</option>
         <option>Basics of Cooking</option>
@@ -29,18 +29,22 @@
       </select>
       </fieldset>
       <fieldset id="surveyDetails">
-        <label for = "contact">Can we contact you for future programs?</label>
-        <label for = "contact"><input type = "radio" id = "contact" value = "yes" name = "contact" /> Yes</label>
-        <label for = "contact"><input type = "radio" id = "contact" value = "no" name = "contact" /> No</label>
-        <label for = "referral">How did you hear about us</label>
-        <label><input type = "checkbox" id = "referral" value = "0" /> Search Engine</label>
-        <label><input type = "checkbox" id = "referral" value = "1" /> Website</label>
-        <label><input type = "checkbox" id = "referral" value = "2" /> Friend or Family</label>
+        <label class = "fullWidth" for = "contact">Can we contact you for future programs?</label>
+        <div id="contactPermission">          
+          <label for = "contact"><input type = "radio" id = "contact" value = "yes" name = "contact" /> Yes</label>
+          <label for = "contact"><input type = "radio" id = "contact" value = "no" name = "contact" /> No</label>
+        </div>
+        <label class = "fullWidth" for = "referral">How did you hear about us</label>
+        <div id="referralSource">          
+          <label><input type = "checkbox" id = "referral" value = "0" /> Search Engine</label>
+          <label><input type = "checkbox" id = "referral" value = "1" /> Website</label>
+          <label><input type = "checkbox" id = "referral" value = "2" /> Friend or Family</label>
+        </div>
       </fieldset>
-      <fieldset>
-        <label for = "other">Do you have special requirements <textarea id = "other" cols = "30" rows = "5"></textarea></label>
+      <fieldset id="otherRequirements">
+        <label class ="fullWidth" for = "other">Do you have special requirements <textarea id = "other" cols = "30" rows = "5"></textarea></label>
       </fieldset>
-      <button type = "Submit" id = "submit">Submit</button>
+      <button type = "submit" id = "submit">Submit</button>
     </form>
   </body>
 </html>
