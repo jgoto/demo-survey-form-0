@@ -38,6 +38,10 @@ body{
   flex-direction: column;
 }
 
+label#refferal-source{
+  padding-bottom: 5px;
+}
+
 .fullWidth{
   width: 100%;
   padding: 6px auto;
@@ -68,6 +72,12 @@ button[type="submit"]{
   padding: 8px;
   font-size: 1.5em;
   margin: auto;
+}
+
+div.increased-whitespace{
+  padding: 5px 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, p{
@@ -103,4 +113,5 @@ fieldset{
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 12px;
+  border-radius: 8px;
 }
