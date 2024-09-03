@@ -6,45 +6,45 @@
     <link rel = "stylesheet" href = "styles.css">
   </head>
   <body>
-    <h1 id = "title">Learn About Our Programs</h1>
-    <p class ="fullWidth" id="description">Tell us about yourself and the program you are interested in</p>
-    <form id = "survey-form">
-      <fieldset id = "personalDetails" >
-        <div class="personalDetail">
+    <div id="heading">
+      <h1 id = "title">Learn About Our Programs</h1>
+      <p class ="fullWidth" id="description">Tell us about yourself and the program you are interested in</p>
+    </div>
+    <div id = "form-container">
+      <form id = "survey-form">
+        <fieldset id = "personalDetails" >
           <label id = "name-label" for ="name">Name <input type = "text" id = "name" placeholder = "Full Name" required></label>
-        </div>
-        <div class="personalDetail">
           <label id = "email-label" for = "email">Email <input type = "email" id = "email" placeholder = "Email" required></label>
-        </div>
-        <div class="personalDetail">
           <label id = "number-label" for = "number">Age <input type = "number" id = "number" min = "49" max = "113" placeholder = "50"></label>
-        </div>
-        <label class="fullWidth" for = "dropdown">Which Program are you interested </label>
-      <select id = "dropdown" >
-        <option>Please Select</option>
-        <option>Basics of Cooking</option>
-        <option>Mountain Biking</option>
-        <option>Creative Writing</option>
-        <option>Photography</option>
-      </select>
-      </fieldset>
-      <fieldset id="surveyDetails">
-        <label class = "fullWidth">Can we contact you for future programs?</label>
-        <div id="contactPermission">          
-          <label for = "contact-yes"><input type = "radio" id = "contact-yes" value = "yes" name = "contact"> Yes</label>
-          <label for = "contact-no"><input type = "radio" id = "contact-no" value = "no" name = "contact"> No</label>
-        </div>
-        <label class = "fullWidth">How did you hear about us</label>
-        <div id="referralSource">          
-          <label><input type = "checkbox" id = "referral-search" value = "0"> Search Engine</label>
-          <label><input type = "checkbox" id = "referral-web" value = "1"> Website</label>
-          <label><input type = "checkbox" id = "referral-ff" value = "2"> Friend or Family</label>
-        </div>
-      </fieldset>
-      <fieldset id="otherRequirements">
-        <label class ="fullWidth" for = "other">Do you have special requirements <textarea id = "other" cols = "30" rows = "5"></textarea></label>
-      </fieldset>
-      <button type = "submit" id = "submit">Submit</button>
-    </form>
+          <label class="fullWidth" for = "dropdown">Which Program are you interested </label>
+          <select id = "dropdown" >
+          <option>Please Select</option>
+          <option>Basics of Cooking</option>
+          <option>Mountain Biking</option>
+          <option>Creative Writing</option>
+          <option>Photography</option>
+          </select>
+        </fieldset>
+        <fieldset id="survey-details">
+          <div id="contact-permission">
+            <label class = "fullWidth">Can we contact you for future programs?</label>
+            <label for = "contact-yes"><input type = "radio" id = "contact-yes" value = "yes" name = "contact"> Yes</label>
+            <label for = "contact-no"><input type = "radio" id = "contact-no" value = "no" name = "contact"> No</label>
+          </div>
+          <div id="referral-source">          
+            <label class = "fullWidth">How did you hear about us</label>
+            <div id="referral-options">
+              <label><input type = "checkbox" id = "referral-search" value = "0"> Search Engine</label>
+              <label><input type = "checkbox" id = "referral-web" value = "1"> Website</label>
+              <label><input type = "checkbox" id = "referral-ff" value = "2"> Friend or Family</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="otherRequirements">
+          <label class ="fullWidth" for = "other">Do you have special requirements <textarea id = "other" cols = "30" rows = "5"></textarea></label>
+        </fieldset>
+        <button type = "submit" id = "submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>

@@ -3,15 +3,27 @@ body{
   font-family: sans-serif;
 }
 
-#personalDetails, #surveyDetails{
+#form-container{
+  display: flex;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+#personalDetails{
   display: flex;
   gap: 8px;
   flex-direction: column;
   align-items: center;
 }
 
-#personalDetails{
-  margin-bottom: 22px;
+#survey-details{
+  display: flex;
+  flex-direction: row;
+}
+
+#referral-options{
+  display: flex;
+  flex-direction: column;
 }
 
 .personalDetail{
@@ -21,32 +33,9 @@ body{
   gap: 8px;
 }
 
-.personalDetail label, input{
-  flex: 1;
-  text-align: center;
-}
-
-.personalDetail label{
-  width: 25%;
-  padding: 6px;
-
-}
-
-#surveyDetails{
-  margin-bottom: 22px;
-}
-
-.personalDetail input{
-  width: 60%;
-}
-
-#contactPermission{
-  flex-direction: row;
-  align-items: center;
-}
-
-#contactPermission label{
-  width: 30%;
+#contact-permission, #referral-source{
+  display: flex;
+  flex-direction: column;
 }
 
 .fullWidth{
@@ -55,11 +44,6 @@ body{
   text-align: center;
   font-style: italic;
   font-weight: bold;
-}
-
-#referralSource{
-  display: flex;
-  gap: 8px;
 }
 
 #otherRequirements{
@@ -96,7 +80,6 @@ p{
 }
 
 form{
-  margin: 0 auto;
   width: 80%;
   min-width: 300px;
   max-width: 500px;
@@ -117,5 +100,7 @@ select{
 }
 
 fieldset{
-  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 12px;
 }
